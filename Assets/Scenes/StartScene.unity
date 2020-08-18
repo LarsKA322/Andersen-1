@@ -783,7 +783,7 @@ MonoBehaviour:
   rampMask:
     serializedVersion: 2
     m_Bits: 512
-  torqueSpeed: 250
+  torqueSpeed: 2
 --- !u!1 &373160031
 GameObject:
   m_ObjectHideFlags: 0
@@ -1839,7 +1839,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73f9b7294f8a08246b183dc60e13effc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitForce: 1000
+  hitForce: 2000
   fireRate: 0.25
   handsEnd: {fileID: 373160032}
   fireball: {fileID: 7088263121416120324, guid: 9c649ef072c152a4587173966b4513e8,

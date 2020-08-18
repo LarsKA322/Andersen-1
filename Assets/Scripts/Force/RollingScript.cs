@@ -18,6 +18,7 @@ public class RollingScript : MonoBehaviour
         afterHeight = this.transform.position.y;
         _body = this.GetComponent<Rigidbody>();
         _groundCheck = transform.GetChild(0);
+        _body.maxAngularVelocity = 1000f;
     }
     private void Update() {
 
@@ -29,7 +30,7 @@ public class RollingScript : MonoBehaviour
         nowHeight = this.gameObject.transform.position.y;
         if(nowHeight < afterHeight && isGrounded == true)
         {
-            this._body.AddForce(_body.velocity * Time.deltaTime * torqueSpeed);
+            this._body.AddForce(_body.velocity * Time.deltaTime * torqueSpeed, ForceMode.Impulse);
         }else{
             this._body.angularVelocity = Vector3.zero;
         }
